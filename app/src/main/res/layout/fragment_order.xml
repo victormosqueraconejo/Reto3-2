@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Categories -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:id="@+id/categories_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+        </HorizontalScrollView>
+
+        <!-- Products -->
+        <LinearLayout
+            android:id="@+id/products_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Cart Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/cart_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="🛒"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:background="@android:color/darker_gray"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/total_quantity"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignTop="@id/cart_icon"
+                    android:layout_alignEnd="@id/cart_icon"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$0.00"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="16sp"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

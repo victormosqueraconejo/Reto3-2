@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="←"
+                android:textSize="18sp"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Information"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <!-- Form -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:layout_margin="16dp">
+
+            <!-- Name -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="textPersonName"
+                android:background="@android:drawable/edit_text"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Phone -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/phone_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="phone"
+                android:background="@android:drawable/edit_text"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Address -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/address_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="textPostalAddress"
+                android:background="@android:drawable/edit_text"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Payment Method -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Method of payment"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp">
+
+                <RadioButton
+                    android:id="@+id/visa_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visa card"
+                    android:layout_marginEnd="24dp"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/cash_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cash" />
+
+            </RadioGroup>
+
+            <!-- Check out Button -->
+            <Button
+                android:id="@+id/checkout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check out"
+                android:textSize="16sp"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
