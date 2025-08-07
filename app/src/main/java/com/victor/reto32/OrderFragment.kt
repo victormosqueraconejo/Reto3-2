@@ -144,7 +144,6 @@ class OrderFragment : Fragment() {
             updateProductQuantity(productView, product)
             updateCartInfo()
 
-            // Aplicar descuento si es necesario
             val newQuantity = CartManager.getCartItems().find { it.product.id == product.id }?.quantity ?: 0
             if (newQuantity >= 5) {
                 applyDiscount(productView, product)

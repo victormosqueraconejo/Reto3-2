@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:background="#F5F5F5">
 
-    <!-- Header -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
 
     </LinearLayout>
 
-    <!-- Cart Items -->
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -49,9 +49,11 @@
             android:orientation="vertical"
             android:padding="16dp" />
 
+
+
     </ScrollView>
 
-    <!-- Bottom Section -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,7 +61,6 @@
         android:background="@android:color/white"
         android:padding="16dp">
 
-        <!-- Total -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -84,7 +85,6 @@
 
         </LinearLayout>
 
-        <!-- Clear Button -->
         <Button
             android:id="@+id/clear_button"
             android:layout_width="match_parent"

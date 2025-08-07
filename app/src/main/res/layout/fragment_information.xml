@@ -8,8 +8,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
-        <!-- Header -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,7 +39,7 @@
 
         </LinearLayout>
 
-        <!-- Form -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,7 +48,7 @@
             android:background="@android:color/white"
             android:layout_margin="16dp">
 
-            <!-- Name -->
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -68,7 +66,6 @@
                 android:padding="12dp"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Phone -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -86,7 +83,7 @@
                 android:padding="12dp"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Address -->
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -104,7 +101,7 @@
                 android:padding="12dp"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Payment Method -->
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -135,7 +132,7 @@
 
             </RadioGroup>
 
-            <!-- Check out Button -->
+
             <Button
                 android:id="@+id/checkout_button"
                 android:layout_width="match_parent"

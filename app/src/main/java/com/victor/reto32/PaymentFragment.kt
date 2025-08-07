@@ -31,10 +31,10 @@ class PaymentFragment : Fragment() {
         }
 
         confirmButton.setOnClickListener {
-            // Limpiar carrito y volver al inicio
+
             CartManager.clearCart()
 
-            // Volver al OrderFragment y limpiar el back stack
+
             parentFragmentManager.popBackStack(null, androidx.fragment.app.FragmentManager.POP_BACK_STACK_INCLUSIVE)
             (activity as MainActivity).replaceFragment(OrderFragment())
         }

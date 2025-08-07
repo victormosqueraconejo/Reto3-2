@@ -10,7 +10,6 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Header -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -20,7 +19,8 @@
             android:gravity="center"
             android:layout_marginBottom="16dp" />
 
-        <!-- Categories -->
+
+
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,8 +33,6 @@
                 android:orientation="horizontal" />
 
         </HorizontalScrollView>
-
-        <!-- Products -->
         <LinearLayout
             android:id="@+id/products_layout"
             android:layout_width="match_parent"
@@ -42,7 +40,7 @@
             android:orientation="vertical"
             android:layout_marginBottom="16dp" />
 
-        <!-- Cart Info -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -93,7 +91,6 @@
 
         </LinearLayout>
 
-        <!-- Submit Button -->
         <Button
             android:id="@+id/submit_button"
             android:layout_width="match_parent"
@@ -103,6 +100,13 @@
             android:background="@android:color/holo_blue_dark"
             android:textColor="@android:color/white" />
 
+
+
+
     </LinearLayout>
+
+
+
+
 
 </ScrollView>

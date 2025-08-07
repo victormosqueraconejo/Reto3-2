@@ -60,8 +60,6 @@ class CartFragment : Fragment() {
         val increaseBtn = itemView.findViewById<Button>(R.id.increase_button)
 
         nameText.text = cartItem.product.name
-
-        // Aplicar descuento si la cantidad es >= 5
         val finalPrice = if (cartItem.quantity >= 5) {
             cartItem.product.price * 0.9
         } else {
